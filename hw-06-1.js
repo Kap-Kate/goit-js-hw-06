@@ -1,12 +1,12 @@
 //   TASK 1
-// const list = document.querySelectorAll('.item');
-// console.log('Number of categories:', list.length);
+const list = document.querySelectorAll('.item');
+console.log('Number of categories:', list.length);
 
-// const title = document.querySelectorAll('h2');
-// title.forEach(function (element, number) {
-//     console.log(`Category: ${element.innerText}
-// Elements: ${number}`);
-// })
+const title = document.querySelectorAll('h2');
+title.forEach(function (element, index) {
+    console.log(`Category: ${element.innerText}
+Elements: ${index}`);
+})
  
 //  TASK 2
 // const ingredients = [
@@ -53,6 +53,8 @@
 // ];
 
 
+// TASK 5
+// const title = document.querySelector('#name-output');
 
 
 
