@@ -1,40 +1,36 @@
 //   TASK 1
-const list = document.querySelectorAll('.item');
-console.log('Number of categories:', list.length);
+// const list = document.querySelectorAll('.item');
+// console.log('Number of categories:', list.length);
 
-const title = document.querySelectorAll('h2');
-title.forEach(function (element, index) {
-    console.log(`Category: ${element.innerText}
-Elements: ${index}`);
-})
+// const title = document.querySelectorAll('h2');
+
+// title.forEach(function (element, index) {
+//     console.log(`Category: ${element.innerText}
+// Elements: ${index}`);
+// })
+
+
+
  
 //  TASK 2
-// const ingredients = [
-//   "Potatoes",
-//   "Mushrooms",
-//   "Garlic",
-//   "Tomatos",
-//   "Herbs",
-//   "Condiments",
-// ];
+const ingredients = [
+  "Potatoes",
+  "Mushrooms",
+  "Garlic",
+  "Tomatos",
+  "Herbs",
+  "Condiments",
+];
 
-// const list = document.createElement('li');
-// console.log(list);
-// list.textContent = 'Potatoes';
-// list.className = 'item';
-// const listText = ingredients.map(ingredient => `<li class='item'> ${ingredient}</li>`).join('');
-// list.innerHTML = listText;
+const list = document.createElement('li');
+list.classList.add('item');
+const listEl = document.querySelector('#ingredients');
+console.log(listEl);
 
+const listText = ingredients.map(ingredient => `<li> ${ingredient}</li>`).join('');
+list.innerHTML = listText;
+listEl.appendChild(list);
 
-// const list = document.createElement('li');
-// console.log(list);
-// list.textContent = 'Potatoes';
-// list.className = 'item';
-// const listText = ingredients.map(ingredient => ingredient.toLowerCase()).join(' ');
-// console.log(listText);
-// list.appendChild(document.createTextNode(''));
-// document.querySelector('#ingredients').appendChild(list);
-// console.log(list);
 
 //TASK 3
 // const images = [
